@@ -16,6 +16,7 @@ public class LoginTC {
     public static WebDriver driverSetup(String browser){
         WebDriver driver;
 
+
         switch (browser.toLowerCase()){
             case "chrome":
                 System.setProperty("webdriver.edge.driver", "C:/Users/mxjcruz/Desktop/SeleniumWorkshop/SeleniumProject/drivers/chrome/120/chromedriver.exe");
@@ -48,7 +49,10 @@ public class LoginTC {
         System.out.println(driver.getTitle());
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.orangehrm-login-branding>img")));
+
         WebElement usernameField = driver.findElement(By.cssSelector("input[name = \"username\"]"));
+        WebElement usernameField2 = driver.findElement(By.xpath("//input[@name = 'username']"));
+        WebElement usernameField3 = driver.findElement(By.id("app"));
         usernameField.sendKeys("Admin");
         WebElement passwordField = driver.findElement(By.cssSelector("input[name = \"password\"]"));
         passwordField.sendKeys("admin123");
@@ -56,6 +60,38 @@ public class LoginTC {
         loginBtn.click();
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         //driver.quit();
+
+        /*
+        ---Webdriver interfaces and classes---
+        Parent interface:
+            Webdriver
+            driver.<method>;
+            driver.getTitle();
+            driver.quit();
+        Children interfaces:
+            Window
+            driver.manage().window().<method>;
+            driver.manage().window().maximize();
+            driver.manage().window().mimi,ize();
+
+            Options
+            driver.manage().<method>;
+            driver.manage().deleteCookieNamed(String name);
+
+            Navigation
+            driver.navigate().<method>;
+            driver.navigate().back();
+
+            TargetLocator
+            driver.switchTo().<method>;
+            driver.switchTo().parentFrame();
+
+            Timeouts
+            driver.manage().timeouts().<method>;
+            driver.manage().timeouts().implicityWait(10);
+
+        */
+
     }
 
 }

@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="agregando cambios para setear">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jc/automation/DriverSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/navigationPages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/EdgeBrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/LoginTC.java" afterDir="false" />
+    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="agregando drivers para navegadores y codigo para setearlos">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/LocatorsEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/TakeScreenshotDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/jsExecutorDemo/jsExecutorDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jc/automation/LoginTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/LoginTC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +52,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LocatorsEx.executor": "Run",
+    "Application.coockiesDemo.executor": "Run",
+    "Application.jsExecutorDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propDebugger"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LoginTC">
+  <component name="RunManager" selected="Application.LocatorsEx">
     <configuration name="EdgeBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jc.automation.EdgeBrowser" />
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jc.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocatorsEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.LocatorsEx" />
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -89,12 +105,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="coockiesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.coockiesDemo" />
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jc.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsExecutorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.jsExecutorDemo.jsExecutorDemo" />
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jc.automation.jsExecutorDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LocatorsEx" />
+        <item itemvalue="Application.coockiesDemo" />
+        <item itemvalue="Application.jsExecutorDemo" />
         <item itemvalue="Application.LoginTC" />
         <item itemvalue="Application.EdgeBrowser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-azul-21.0.1-f644763e9732-5de7a7d0" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703193559657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="agregando drivers para navegadores y codigo para setearlos">
+      <option name="closed" value="true" />
+      <created>1704401683948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704401683948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +189,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agregando cambios para setear" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregando cambios para setear" />
+    <MESSAGE value="agregando drivers para navegadores y codigo para setearlos" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregando drivers para navegadores y codigo para setearlos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
