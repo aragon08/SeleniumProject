@@ -47,9 +47,11 @@ public class LoginTC {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         System.out.println(driver.getTitle());
+        //Explicit wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.orangehrm-login-branding>img")));
 
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         WebElement usernameField = driver.findElement(By.cssSelector("input[name = \"username\"]"));
         WebElement usernameField2 = driver.findElement(By.xpath("//input[@name = 'username']"));
         WebElement usernameField3 = driver.findElement(By.id("app"));
@@ -58,7 +60,9 @@ public class LoginTC {
         passwordField.sendKeys("admin123");
         WebElement loginBtn = driver.findElement(By.cssSelector("button.orangehrm-login-button"));
         loginBtn.click();
+        //Implicit wait
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+
         //driver.quit();
 
         /*

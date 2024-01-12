@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="agregando drivers para navegadores y codigo para setearlos">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/LocatorsEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/TakeScreenshotDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/jsExecutorDemo/jsExecutorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="Agregando ejercicios de locators e informacion sobre interfaces y clases de webdriver">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/FluentWaitEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/NoSuchElementEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/PageLoadTimeoutEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/TimeoutExceptionEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jc/automation/LoginTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/LoginTC.java" afterDir="false" />
     </list>
@@ -52,7 +52,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.FluentWaitEx.executor": "Run",
     "Application.LocatorsEx.executor": "Run",
+    "Application.NoSuchElementEx.executor": "Run",
+    "Application.TimeoutExceptionEx.executor": "Run",
     "Application.coockiesDemo.executor": "Run",
     "Application.jsExecutorDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -65,9 +68,9 @@
     "settings.editor.selected.configurable": "project.propDebugger"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LocatorsEx">
-    <configuration name="EdgeBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jc.automation.EdgeBrowser" />
+  <component name="RunManager" selected="Application.NoSuchElementEx">
+    <configuration name="FluentWaitEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.FluentWaitEx" />
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -92,12 +95,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jc.automation.LoginTC" />
+    <configuration name="NoSuchElementEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.seleniumExceptions.NoSuchElementEx" />
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jc.automation.*" />
+          <option name="PATTERN" value="com.jc.automation.seleniumExceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeoutExceptionEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.seleniumExceptions.TimeoutExceptionEx" />
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jc.automation.seleniumExceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,26 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jsExecutorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jc.automation.jsExecutorDemo.jsExecutorDemo" />
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jc.automation.jsExecutorDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoSuchElementEx" />
+        <item itemvalue="Application.TimeoutExceptionEx" />
+        <item itemvalue="Application.FluentWaitEx" />
         <item itemvalue="Application.LocatorsEx" />
         <item itemvalue="Application.coockiesDemo" />
-        <item itemvalue="Application.jsExecutorDemo" />
-        <item itemvalue="Application.LoginTC" />
-        <item itemvalue="Application.EdgeBrowser" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704401683948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Agregando ejercicios de locators e informacion sobre interfaces y clases de webdriver">
+      <option name="closed" value="true" />
+      <created>1704821784090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704821784090</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agregando cambios para setear" />
     <MESSAGE value="agregando drivers para navegadores y codigo para setearlos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregando drivers para navegadores y codigo para setearlos" />
+    <MESSAGE value="Agregando ejercicios de locators e informacion sobre interfaces y clases de webdriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregando ejercicios de locators e informacion sobre interfaces y clases de webdriver" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
