@@ -40,7 +40,7 @@ public class LoginTC {
         return driver;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         String browser = "chrome";
         WebDriver driver = driverSetup(browser);
 
@@ -62,6 +62,7 @@ public class LoginTC {
         loginBtn.click();
         //Implicit wait
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+
 
         //driver.quit();
 
