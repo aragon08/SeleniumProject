@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="Agregando waits(implicits, expicit y fluent), agregando execptions (NoSuchElement, Timeout, PageLoadTimeout)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/InvalidSelectorExceptionEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/SetScriptTimeoutEx.java" afterDir="false" />
+    <list default="true" id="d27e7bac-52af-4ee6-ba2c-fb86eef951d7" name="Changes" comment="Agregando ExpectedConditions interface y class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/WebElementsEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/seleniumExceptions/WebElementEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/navigationPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navigationPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jc/automation/ExpectedConditionsEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jc/automation/ExpectedConditionsEx.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,7 @@
     "Application.NoSuchElementEx.executor": "Run",
     "Application.SetScriptTimeoutEx.executor": "Run",
     "Application.TimeoutExceptionEx.executor": "Run",
+    "Application.WebElementsEx.executor": "Run",
     "Application.coockiesDemo.executor": "Run",
     "Application.jsExecutorDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -64,23 +67,10 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propDebugger"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SetScriptTimeoutEx">
-    <configuration name="FluentWaitEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jc.automation.FluentWaitEx" />
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jc.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WebElementsEx">
     <configuration name="InvalidSelectorExceptionEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jc.automation.seleniumExceptions.InvalidSelectorExceptionEx" />
       <module name="SeleniumProject" />
@@ -133,13 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebElementsEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.automation.WebElementsEx" />
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jc.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebElementsEx" />
         <item itemvalue="Application.SetScriptTimeoutEx" />
         <item itemvalue="Application.InvalidSelectorExceptionEx" />
         <item itemvalue="Application.NoSuchElementEx" />
         <item itemvalue="Application.TimeoutExceptionEx" />
-        <item itemvalue="Application.FluentWaitEx" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +194,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705077686195</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Agregando execptions (InvalidSelectorException y JavascriptExecutor-scriptTimeout)">
+      <option name="closed" value="true" />
+      <created>1705422386847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422386847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Agregando exceptions (InvalidSelectorException)">
+      <option name="closed" value="true" />
+      <created>1705422468970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422468970</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Agregando ExpectedConditions interface y class">
+      <option name="closed" value="true" />
+      <created>1705594205325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705594205325</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +237,10 @@
     <MESSAGE value="agregando drivers para navegadores y codigo para setearlos" />
     <MESSAGE value="Agregando ejercicios de locators e informacion sobre interfaces y clases de webdriver" />
     <MESSAGE value="Agregando waits(implicits, expicit y fluent), agregando execptions (NoSuchElement, Timeout, PageLoadTimeout)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregando waits(implicits, expicit y fluent), agregando execptions (NoSuchElement, Timeout, PageLoadTimeout)" />
+    <MESSAGE value="Agregando execptions (InvalidSelectorException y JavascriptExecutor-scriptTimeout)" />
+    <MESSAGE value="Agregando exceptions (InvalidSelectorException)" />
+    <MESSAGE value="Agregando ExpectedConditions interface y class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregando ExpectedConditions interface y class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

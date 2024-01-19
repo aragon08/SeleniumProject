@@ -15,6 +15,7 @@ public class ExpectedConditionsEx {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
         //ExpectedConditons class
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //        WebElement elemento = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.orangehrm-login-branding>img")));

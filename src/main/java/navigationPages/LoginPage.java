@@ -10,16 +10,17 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (name = "username")
+    @FindBy (id = "user-name")
     private WebElement usernameTxt;
 
     @FindBy (name = "password")
     private WebElement passwordTxt;
 
-    @FindBy (className = "button.orangehrm-login-button")
+    @FindBy (className = "btn_action")
     private WebElement loginBtn;
 
     public void login(String user, String password){
+
 
     }
 }
